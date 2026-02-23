@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/assets/css/mix.css">
+
 <div class="container d-flex justify-content-center mt-5">
     <div class="col-12 col-md-8 col-lg-6 d-flex flex-column gap-3 gap-lg-1 bg-dark bg-opacity-75 p-3 rounded-4 mb-lg-0 shadow text-light animate__animated animate__bounceInLeft">
         <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between">
