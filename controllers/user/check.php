@@ -33,7 +33,7 @@ if(empty($_SESSION['data']) || (time() - $_SESSION['temp']['time']) > REQUEST_AP
     // call API get data from GG Sheet
     try {
         // query get
-        $response = $service->spreadsheets_values->get(SHEET_ID, 'Info!A3:D');
+        $response = $service->spreadsheets_values->get(SHEET_ID, 'Info!A2:D');
         
         // get values
         $_SESSION['data'] = $response->getValues(); 
@@ -76,6 +76,6 @@ if(empty($_SESSION['temp']['result'])) {
     route();
 }
 // case : more than 2 customer
-elseif(count($_SESSION['temp']['result']) > 2) route('choose');
+elseif(count($_SESSION['temp']['result']) > 1) route('choose');
 // case : has data customer
 else route('result');
